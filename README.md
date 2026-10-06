@@ -91,11 +91,9 @@ Each measurement is provided as mean, standard error and worst-value measurement
 Logistic Regression is a classification algorithm that estimates the probability of an observation belonging to a particular class.
 The model uses the **sigmoid function** to convert its output into a probability between 0 and 1.
 The sigmoid function is:
-
-              1
-Sigmoid(z) = ─────────
-             1 + e⁻ᶻ
-
+$$
+\sigma(z) = \frac{1}{1 + e^{-z}}
+$$
 A probability close to `1` indicates a higher likelihood of the tumor being classified as malignant, while a probability close to `0` indicates a higher likelihood of being benign.
 
 ## Threshold Tuning
